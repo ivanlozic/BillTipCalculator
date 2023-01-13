@@ -1,0 +1,103 @@
+.main {
+  background-color: rgb(43, 105, 167);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .box {
+    width: 800px;
+    height: 400px;
+    border-radius: 20px;
+    background-color: white;
+
+    input{
+        text-align: right;
+    }
+
+    .calculator {
+      height: 100%;
+      padding: 20px;
+
+
+      .bill{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+      }
+
+      .num-people{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+      }
+
+      .btn-percentage {
+        background-color: #00474b;
+        color: white;
+        padding: 10px;
+        width: 100px;
+        font-size: 25px;
+
+        &:hover {
+          background-color: #9fe8df;
+        }
+      }
+
+      .custom{
+        width: 100px;
+        border-radius: 5px;
+        padding: 12px;
+        font-size: 20px;
+      }
+
+      .result-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20px;
+        background-color: #00474b;
+        width: 90%;
+        height: 100%;
+        border-radius: 10px;
+
+        .amount {
+          display: flex;
+          justify-content: space-around;
+          margin-top: 30px;
+          p {
+            color: white;
+          }
+          .price{
+            color: #9fe8df;
+            font-size: 25px;
+          }
+        }
+
+        .btn-reset {
+          background-color: #9fe8df;
+          color: #00474b;
+          justify-self: flex-end;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:800px) {
+.main{
+  height: fit-content;
+  padding: 50px;
+  .box{
+    width: 90%;
+    height: fit-content;
+    padding: 20px 0;
+
+  }
+
+  .result-box{
+    margin: 20px ;
+  }
+}
+}
