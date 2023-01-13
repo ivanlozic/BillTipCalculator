@@ -8,14 +8,11 @@
               <div class="bill">
                 <label for="billValue">Bill</label>
                 <input formControlName="bill"  class="form-control" type="number" id="billValue" placeholder="$"/>
-              </div>
-
-              <div>
-                <button type="submit" (click)="calcTip(5)"  [disabled]="!calcForm.valid" class="btn btn-percentage m-2">5%</button>
-                <button type="submit" (click)="calcTip(10)" [disabled]="!calcForm.valid" class="btn btn-percentage m-2">10%</button>
-                <button type="submit" (click)="calcTip(15)" [disabled]="!calcForm.valid" class="btn btn-percentage m-2">15%</button>
-                <button type="submit" (click)="calcTip(25)" [disabled]="!calcForm.valid" class="btn btn-percentage m-2">25%</button>
-                <button type="submit" (click)="calcTip(50)" [disabled]="!calcForm.valid" class="btn btn-percentage m-2">50%</button>
+                <button type="submit" (click)="calcTip(5)"   class="btn btn-percentage m-2">5%</button>
+                <button type="submit" (click)="calcTip(10)"  class="btn btn-percentage m-2">10%</button>
+                <button type="submit" (click)="calcTip(15)"  class="btn btn-percentage m-2">15%</button>
+                <button type="submit" (click)="calcTip(25)"  class="btn btn-percentage m-2">25%</button>
+                <button type="submit" (click)="calcTip(50)"  class="btn btn-percentage m-2">50%</button>
                 
               </div>
 
